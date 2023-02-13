@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Form";
+}
+
+<head>
+
+    
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+    <div class="formArea">
+        <h1>Send Thank You:</h1>
+        <br />
+        <form method="post">
+
+            <label>To: </label>
+            <input type="email" placeholder="Enter to address..." required="required" pattern="[a-z0-9._%+-] +@@ [a-z0-9.-+ \ [a-z]{2,}$" name="toAddress" />
+            <br /><br />
+            <label>Enter Thank You:</label>
+            <br />
+            <textarea placeholder="Enter message..." rows="5" cols="40" name="message"></textarea>
+            <br /><br />
+            <input type="submit" value="Send" />
+
+        </form>
+    </div>
+
+
+</body>
+
