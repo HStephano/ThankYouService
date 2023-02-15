@@ -46,7 +46,7 @@ namespace MvcTesting.Controllers
             //Connect to gmail and authenticate test account (Bypass OAuth with App Password)
             using var smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-            smtp.Authenticate("hstephanotest12@gmail.com", "tdyrjzdijlmgljut");
+            smtp.Authenticate("hstest718@gmail.com", "wvidjhzwmzwbjudy");
             smtp.Send(newMessage);
             smtp.Disconnect(true);
 
